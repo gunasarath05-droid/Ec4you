@@ -8,10 +8,10 @@ export default function Subscribe() {
       {/* World Map Background */}
       <div className="absolute inset-0 opacity-30">
         <div
-          className="w-full h-full bg-center bg-no-repeat bg-contain"
+          className="w-full h-full bg-center bg-no-repeat bg-cover"
           style={{
             backgroundImage:
-              "url('https://www.transparentpng.com/thumb/world-map/dotted-world-map-png-5.png')",
+              "url('https://i.pinimg.com/webp85/1200x/99/d3/6b/99d36b52bda8cb919deaf4874da2f1bd.webp')",
           }}
         />
       </div>
