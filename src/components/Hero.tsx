@@ -61,14 +61,14 @@ export default function Hero() {
           </p>
 
           <a
-            href="#contact"
+            href="https://ec4you.in/contact"
             className="inline-block px-8 sm:px-12 py-3 sm:py-4 bg-gradient-to-r from-[#669999] to-[#005858] text-white font-semibold text-base sm:text-lg rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300 shadow-lg shadow-[#669999]/30"
           >
             Get Started
           </a>
 
           {/* BADGES */}
-          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 md:gap-4 mt-8 sm:mt-10">
+          <div className="flex flex-wrap md:flex-nowrap items-center justify-center lg:justify-start gap-3 md:gap-4 mt-8 sm:mt-10">
             {BADGES.map((badge, i) => (
               <img
                 key={i}

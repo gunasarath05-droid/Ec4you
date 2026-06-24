@@ -6,9 +6,11 @@ import Testimonials from "@/components/Testimonials";
 import SuccessStories from "@/components/SuccessStories";
 import ContactForm from "@/components/ContactForm";
 import ContactInfo from "@/components/ContactInfo";
+import Subscribe from "@/components/Subscribe";
 
 import { testimonials } from "@/data/testimonials";
 import { successStories } from "@/data/story";
+
 
 export default function HomePage() {
   return (
@@ -18,8 +20,6 @@ export default function HomePage() {
       <Branding />
       <WhyChoose />
       <Testimonials testimonials={testimonials} />
-      
-
       <section id="contact" className="py-10 sm:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8 sm:mb-16">
@@ -36,6 +36,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+        <Subscribe />
     </>
   );
 }
