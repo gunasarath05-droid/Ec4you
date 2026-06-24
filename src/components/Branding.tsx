@@ -181,11 +181,11 @@ export default function Branding() {
   }, [animateCounters]);
 
   return (
-    <section className="bg-white py-24 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-white py-14 sm:py-24 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* HEADING */}
 
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-black leading-tight mb-4">
             We Worked With <br />
             <span className="bg-gradient-to-r from-[#ff6b35] to-[#f7931e] bg-clip-text text-transparent">
@@ -200,8 +200,8 @@ export default function Branding() {
 
         {/* ROW 1 */}
 
-        <div className="overflow-hidden mb-8">
-          <div className="flex animate-marquee gap-6 w-max py-2">
+        <div className="overflow-hidden mb-6 sm:mb-8">
+          <div className="flex animate-marquee gap-4 sm:gap-6 w-max py-2">
             {[...row1, ...row1, ...row1].map((brand, i) => (
               <LogoCard key={i} brand={brand} />
             ))}
@@ -210,8 +210,8 @@ export default function Branding() {
 
         {/* ROW 2 */}
 
-        <div className="overflow-hidden mb-8">
-          <div className="flex animate-marquee-reverse gap-6 w-max py-2">
+        <div className="overflow-hidden mb-6 sm:mb-8">
+          <div className="flex animate-marquee-reverse gap-4 sm:gap-6 w-max py-2">
             {[...row2, ...row2, ...row2].map((brand, i) => (
               <LogoCard key={i} brand={brand} />
             ))}
@@ -221,7 +221,7 @@ export default function Branding() {
         {/* ROW 3 */}
 
         <div className="overflow-hidden">
-          <div className="flex animate-marquee gap-6 w-max py-2">
+          <div className="flex animate-marquee gap-4 sm:gap-6 w-max py-2">
             {[...row3, ...row3, ...row3].map((brand, i) => (
               <LogoCard key={i} brand={brand} />
             ))}
@@ -232,16 +232,16 @@ export default function Branding() {
 
         <div
           ref={statsRef}
-          className="mt-24 border-t border-gray-200 pt-14 grid grid-cols-1 md:grid-cols-3 gap-10"
+          className="mt-16 sm:mt-24 border-t border-gray-200 pt-10 sm:pt-14 grid grid-cols-3 gap-4 sm:gap-10"
         >
           {STATS.map((item) => (
             <div key={item.id} className="text-center">
-              <h3 className="text-6xl font-extrabold bg-gradient-to-r from-[#669999] to-[#005858] text-transparent bg-clip-text">
+              <h3 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-[#669999] to-[#005858] text-transparent bg-clip-text">
                 {counts[item.id] || 0}
                 {item.suffix}
               </h3>
 
-              <p className="text-gray-500 mt-3 uppercase tracking-widest font-semibold">
+              <p className="text-gray-500 mt-2 sm:mt-3 text-xs sm:text-sm uppercase tracking-widest font-semibold">
                 {item.label}
               </p>
             </div>
@@ -254,11 +254,11 @@ export default function Branding() {
 
 function LogoCard({ brand }: any) {
   return (
-    <div className="group min-w-[230px] h-[110px] bg-white border border-gray-100 rounded-3xl shadow-md flex items-center justify-center px-8">
+    <div className="group min-w-[160px] sm:min-w-[230px] h-[80px] sm:h-[110px] bg-white border border-gray-100 rounded-3xl shadow-md flex items-center justify-center px-4 sm:px-8">
       <img
         src={brand.src}
         alt={brand.alt}
-        className="max-h-[55px] max-w-[170px] object-contain"
+        className="max-h-[40px] sm:max-h-[55px] max-w-[120px] sm:max-w-[170px] object-contain"
       />
     </div>
   );

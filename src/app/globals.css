@@ -18,6 +18,10 @@
   }
 }
 
+html {
+  overflow-x: hidden;
+}
+
 html, body, * {
   font-family: var(--font-poppins), "Poppins", sans-serif !important;
 }
@@ -25,6 +29,7 @@ html, body, * {
 body {
   background: var(--background);
   color: var(--foreground);
+  overflow-x: hidden;
 }
 
 @keyframes marquee {

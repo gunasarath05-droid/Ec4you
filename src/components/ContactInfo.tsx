@@ -6,9 +6,9 @@ export default function ContactInfo() {
   const lottieRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="bg-[#fcfcfc] rounded-3xl p-8 sm:p-10 md:p-14 shadow-xl h-full">
+    <section className="bg-[#fcfcfc] rounded-3xl p-6 sm:p-10 md:p-14 shadow-xl h-full">
       {/* Heading */}
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-black leading-tight mb-6">
+      <h2 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-black leading-tight mb-6">
         Get in Touch{" "}
         <span className="bg-gradient-to-r from-[#ff6b00] to-[#ff8c00] text-transparent bg-clip-text">
           100+ Brands
